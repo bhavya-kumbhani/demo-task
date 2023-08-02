@@ -1,17 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import { Routes, Route, Link } from 'react-router-dom';
-import Login from './Routes/Login';
-import SignUp from './Routes/SignUp';
-import Users from './Routes/Users';
+import logo from "./logo.svg";
+import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes/routeWrappers/route";
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" exact element={<Login />} />
-        <Route path="/register" exact element={<SignUp />} />
-        <Route path="/dashboard" exact element={<Users />} />
-      </Routes>
+      <RouterProvider router={router} />
     </div>
   );
 }

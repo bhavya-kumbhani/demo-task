@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import ProductModel from "../../components/ProductModel";
+import ProductModel from "../../../components/ProductModel";
 
 const Users = () => {
     const [model, setModel] = useState(false);
